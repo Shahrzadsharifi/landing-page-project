@@ -1,0 +1,269 @@
+* {
+  /* reset padding and margin  */
+  padding: 0px;
+  margin: 0px;
+  /* setting font family for all elements  */
+  font-family: Montserrat;
+  /* setting box-sizing to border-box to make design easier  */
+  box-sizing: border-box;
+  font-size: 16px;
+}
+/* defining grid for body  */
+body {
+  display: grid;
+  grid-template-rows: 1295px 300px;
+  grid-template-columns: minmax(375px, 767px);
+}
+/* defining logo size  */
+.logo-image {
+  height: 81px;
+  width: 90px;
+}
+/*  defining top part of my grid as flex   */
+.startSection {
+  display: flex;
+  flex-direction: column;
+}
+/*  the is the space around main components  */
+.wrapper,
+footer {
+  /* 530px 225px 540px */
+  padding: 35px;
+}
+/* Top padding for wrapper  */
+.wrapper {
+  padding-top: 25px;
+}
+/*  adding background colors and styling footer  */
+footer {
+  background-color: #fffd8c;
+  height: 100%;
+  min-width: 375px;
+}
+/* s */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+/* styling scooter image  */
+.scooter {
+  height: 211;
+  width: 290px;
+}
+/* The font size of the paragraph of header */
+.p-header {
+  font-size: 24px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* creates  */
+.shadowbox {
+  display: flex;
+  justify-content: center;
+}
+/* This is for centering elements  */
+.middle {
+  display: flex;
+  justify-content: center;
+}
+/* This is the padding of body  */
+.padding {
+  padding: 16px 0px;
+}
+/*  Defining the style for div class .apply-container */
+.apply-container {
+  width: 100%;
+  height: 495px;
+  box-shadow: 10px 10px 10px rgb(201, 198, 198);
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 20px;
+  padding: 25px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/*  styling for inputs of the page */
+.inputDesign {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f4f4f5;
+  padding: 10px;
+}
+/* set the position of checkbox and label */
+.middle-A {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.apply-container div {
+  padding: 2px;
+}
+/*  This is for the button in the apply-container  */
+.btn-apply {
+  background-color: #57eeab;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333131;
+}
+.color-red {
+  color: red;
+}
+/* sizing logo */
+.logo {
+  width: 115px;
+  height: 88px;
+}
+.p-design,
+.color-red {
+  font-size: 14px;
+  margin-top: 5px;
+}
+/*  */
+.CheckboxDesign {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+
+.p-footer {
+  padding: 15px 0px;
+}
+.input-Hours {
+  height: 40px;
+  width: 68px;
+}
+
+.input-City {
+  height: 40px;
+  width: 224px;
+}
+
+.div-btn-footer {
+  padding-top: 10px;
+  width: 100%;
+}
+.div-btn-footer button {
+  height: 40px;
+  background-color: #ff8480;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f7f7ff;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.icons i {
+  font-size: 31.5px;
+}
+/*-----------------  This is my style  for tablet-------------------- */
+@media only screen and (min-width: 768px) {
+  body {
+    grid-template-rows: 1515px 200px;
+    grid-template-columns: minmax(768px, 1919px);
+  }
+
+  .scooter {
+    width: 50%;
+    height: 100%;
+  }
+  .middle .padding {
+    height: 339px;
+  }
+  .apply-container {
+    height: 600px;
+  }
+  .p-apply {
+    font-size: 30px;
+  }
+  .btn-apply {
+    font-size: 32px;
+  }
+  .p-design,
+  .color-red {
+    font-size: 17px;
+  }
+  .input-footer {
+    width: 66%;
+    display: inline;
+  }
+  .div-btn-footer {
+    display: inline;
+    width: 32%;
+    margin-left: 10px;
+  }
+  .div-btn-footer button {
+    width: 32%;
+  }
+  .input-City {
+    width: 42%;
+    margin-left: 10px;
+  }
+  .input-Hours {
+    width: 20%;
+  }
+  .icons {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+/* ------------- This is my style for Desktop--------------- */
+@media only screen and (min-width: 1920px) {
+  body {
+    grid-template-rows: 900px 180px;
+    grid-template-columns: 1fr;
+  }
+  /* styling wrapper and defining grid   */
+  .wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35% 25% 40%;
+    grid-template-areas: "side-left . side-right";
+    /* setting the scooter image as the wrapper background */
+    background-image: url(./images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    padding: 35px 120px;
+  }
+  /* Setting the grid areas for the main grid */
+  .startSection {
+    grid-area: side-left;
+  }
+  .shadowbox {
+    grid-area: side-right;
+    align-self: center;
+  }
+  /* applying hidden to the scooter image */
+  .padding {
+    width: 820px;
+    height: 600px;
+    visibility: hidden;
+  }
+  .apply-container {
+    background-color: white;
+  }
+  .logo {
+    margin-bottom: 15%;
+  }
+  /* styling footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 120px;
+  }
+}
